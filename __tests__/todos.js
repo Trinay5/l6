@@ -136,7 +136,7 @@ describe("Todo Application test", function () {
       _csrf: Ctoken,
     });
     const parsedDeleteResponseFail = JSON.parse(
-      deleteResponseFail.text
+      deleteResponseFail.text//checking
     ).success;
     expect(parsedDeleteResponseFail).toBe(false);
   });
